@@ -1,0 +1,143 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    
+}
+.nav{
+   
+    width: 100%;
+height: 8vh;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+nav ul{
+    margin-left: 500px;
+    list-style-type: none;
+    display: flex;
+}
+nav ul li{
+   padding: 0px 55px;
+   padding-top: 2px;
+}
+nav ul li a{
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 510;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -3%;
+    left:50%;
+    background-color: red;
+    transform: translateX(-50%);
+    transition: width 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav i{
+    font-size:18px ;
+    padding-top: 5px;
+}
+.sym i{
+    padding-right: 20px;
+}
+nav h1{
+    padding-left: 25px;
+    margin-left: 50px;
+}
+.line-one{
+    background-color: red;
+    position: absolute;
+    width:15px;
+    height: 100%;
+    left: 25%;
+}
+.line-two{
+    background-color: rgb(39, 42, 239);
+    position: absolute;
+    width:25px;
+    height: 100%;
+    left: 27%;
+}
+#watch{
+    width: 600px;
+    position: absolute;
+    z-index: 99;
+    left: 11%;
+    top: 2%;
+}
+.text{
+    overflow: hidden;
+    width: 700px;
+    height: 250px;
+    line-height: 65px;
+    position: absolute;
+    top: 35%;
+    left: 47%;
+}
+button{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 40%;
+    top: 69%;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    font-weight: 600;
+    background-color: red;
+    transition: all linear 0.2s;
+}
+button:hover{
+    cursor: pointer;
+    background: #000;
+    color: white;
+}
+.text h2{
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 50px;
+    letter-spacing: 10px;
+   
+}
+.text h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 110px;
+    font-weight: 900;
+}
+.bottom-nav{
+    overflow: hidden;
+    position: absolute;
+    bottom: -2%;
+    right: -2%;
+}
+.bottom-nav nav ul{
+    padding-bottom: 25px;
+display: flex;
+flex-direction: column;
+}
+.bottom-nav nav ul li{
+    padding-bottom: 30px;
+}
